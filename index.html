@@ -19,7 +19,6 @@
     rel="stylesheet"
   />
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -27,7 +26,7 @@
 
   <!-- Header -->
   <header class="site-header">
-    <a href="#" class="logo">hossnadharma</a>
+    <a href="#accueil" class="logo">hossnadharma</a>
 
     <button class="menu-toggle" aria-label="Ouvrir le menu">
       <span></span>
@@ -35,9 +34,10 @@
     </button>
 
     <nav class="main-nav">
+      <a href="#actualites">Actualités</a>
       <a href="#qui-je-suis">Qui je suis</a>
       <a href="#approche">L’approche</a>
-      <a href="#accompagnements">Accompagnements</a>
+      <a href="#formats">Formats</a>
       <a href="#reservation" class="nav-cta">Réserver un appel</a>
     </nav>
   </header>
@@ -55,30 +55,100 @@
         </h1>
 
         <p class="hero-text">
-          Avec rire, rigueur et profondeur.
-          Un espace pour écouter ce qui se passe vraiment dans le corps,
-          les liens, les rythmes de vie et les histoires qui nous traversent.
+          Avec rire, rigueur et profondeur. Un espace pour écouter ce qui se passe
+          vraiment dans le corps, les liens, les rythmes de vie et les histoires qui nous traversent.
         </p>
 
         <div class="hero-actions">
           <a href="#reservation" class="btn btn-primary">Réserver un appel</a>
-          <a href="#qui-je-suis" class="btn btn-secondary">Découvrir l’approche</a>
+          <a href="#actualites" class="btn btn-secondary">Voir les actualités</a>
         </div>
       </div>
 
-      <div class="hero-visual">
-        <div class="organic-shape shape-one"></div>
-        <div class="organic-shape shape-two"></div>
-        <p class="handwritten">écouter avec le corps</p>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-card visual-card-main">
+          <span>01</span>
+          <p>écouter avec le corps</p>
+        </div>
+
+        <div class="orb orb-teal"></div>
+        <div class="orb orb-rose"></div>
+        <div class="orb orb-terracotta"></div>
+
+        <div class="line-mark line-one"></div>
+        <div class="line-mark line-two"></div>
+      </div>
+    </section>
+
+    <!-- Actualités -->
+    <section class="section news" id="actualites">
+      <div class="section-intro">
+        <div>
+          <p class="section-label">Actualités</p>
+          <h2>Rencontres, cercles et espaces vivants.</h2>
+        </div>
+
+        <p>
+          Retrouvez ici les événements à venir, les rencontres passées et les formats
+          proposés autour du corps, de la parole et de l’intimité.
+        </p>
+      </div>
+
+      <div class="news-grid">
+
+        <!-- Événement à venir -->
+        <article class="news-card upcoming">
+          <div class="news-status">À venir</div>
+          <div class="news-date">
+            <span>Prochainement</span>
+          </div>
+
+          <div class="news-content">
+            <h3>Nouveau cercle à venir</h3>
+            <p>
+              Les prochaines dates seront annoncées bientôt. L’espace pourra prendre
+              la forme d’un cercle de parole, d’un atelier corporel ou d’une rencontre thématique.
+            </p>
+
+            <a href="#reservation" class="text-link">Être informé·e</a>
+          </div>
+        </article>
+
+        <!-- Événement passé -->
+        <article class="news-card past">
+          <div class="news-image">
+            <img
+              src="assets/images/matinee-du-feminin.jpeg"
+              alt="Affiche de l'événement Première Matinée Du féminin"
+            />
+          </div>
+
+          <div class="news-content">
+            <div class="news-status">Événement passé</div>
+
+            <h3>Première Matinée “Du féminin”</h3>
+
+            <p class="news-meta">
+              Dimanche 28 juin · 10h00 — 12h00 · Chez Mayah Coffee
+            </p>
+
+            <p>
+              Un temps autour du thème : “Oser prendre sa place — sans s’excuser”.
+              Animation au féminin, cercle de parole et questions libres.
+            </p>
+
+            <a href="#retours" class="text-link">Voir les retours</a>
+          </div>
+        </article>
+
       </div>
     </section>
 
     <!-- Qui je suis -->
     <section class="section about" id="qui-je-suis">
-      <div class="section-label">Qui je suis</div>
-
       <div class="section-grid">
         <div>
+          <p class="section-label">Qui je suis</p>
           <h2>Je m’appelle Hosna.</h2>
         </div>
 
@@ -106,12 +176,20 @@
 
     <!-- Approche -->
     <section class="section approach" id="approche">
-      <div class="section-label">L’approche</div>
+      <div class="section-intro">
+        <div>
+          <p class="section-label">L’approche</p>
+          <h2>Tenir ensemble plusieurs lectures à la fois.</h2>
+        </div>
 
-      <h2>Tenir ensemble plusieurs lectures à la fois.</h2>
+        <p>
+          Une approche qui relie le concret du quotidien, le corps, la parole,
+          les vécus intimes et les structures dans lesquelles on évolue.
+        </p>
+      </div>
 
-      <div class="cards-grid">
-        <article class="card">
+      <div class="approach-grid">
+        <article class="approach-card">
           <span class="card-number">01</span>
           <h3>Le corps</h3>
           <p>
@@ -120,7 +198,7 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="approach-card">
           <span class="card-number">02</span>
           <h3>La parole</h3>
           <p>
@@ -129,7 +207,7 @@
           </p>
         </article>
 
-        <article class="card">
+        <article class="approach-card">
           <span class="card-number">03</span>
           <h3>La prévention</h3>
           <p>
@@ -140,56 +218,93 @@
       </div>
     </section>
 
-    <!-- Accompagnements -->
-    <section class="section services" id="accompagnements">
-      <div class="section-label">Accompagnements</div>
-
-      <div class="section-grid">
+    <!-- Formats -->
+    <section class="section formats" id="formats">
+      <div class="section-intro">
         <div>
-          <h2>Des formats pour avancer seule ou à plusieurs.</h2>
+          <p class="section-label">Formats</p>
+          <h2>Des espaces différents, une même exigence d’écoute.</h2>
         </div>
 
-        <div class="services-list">
-          <div class="service-item">
-            <h3>Individuel</h3>
-            <p>
-              Un espace d’écoute et de travail personnalisé autour du corps,
-              des émotions, des cycles de vie et des besoins du moment.
-            </p>
+        <p>
+          En individuel, en collectif ou en résidence, chaque format est pensé
+          pour garder un cadre clair, sensible et vivant.
+        </p>
+      </div>
+
+      <div class="formats-grid">
+
+        <article class="format-card">
+          <div class="format-illustration illustration-duo">
+            <span></span>
+            <span></span>
           </div>
 
-          <div class="service-item">
+          <div>
+            <h3>Individuel</h3>
+            <p>
+              Un espace personnalisé autour du corps, des émotions,
+              des cycles de vie et des besoins du moment.
+            </p>
+          </div>
+        </article>
+
+        <article class="format-card">
+          <div class="format-illustration illustration-group">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div>
             <h3>Groupe</h3>
             <p>
               Des temps collectifs pour partager, comprendre,
               expérimenter et remettre du lien dans les expériences vécues.
             </p>
           </div>
+        </article>
 
-          <div class="service-item">
-            <h3>Résidence</h3>
-            <p>
-              Des immersions plus longues, pensées comme des espaces de profondeur,
-              de respiration et de pratique.
-            </p>
+        <article class="format-card">
+          <div class="format-illustration illustration-residence">
+            <span></span>
+            <span></span>
           </div>
 
-          <div class="service-item">
+          <div>
+            <h3>Résidence</h3>
+            <p>
+              Des immersions plus longues, pensées comme des espaces
+              de profondeur, de respiration et de pratique.
+            </p>
+          </div>
+        </article>
+
+        <article class="format-card">
+          <div class="format-illustration illustration-circle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div>
             <h3>Cercles de femmes</h3>
             <p>
               Des rencontres structurées, sensibles et vivantes,
               autour du corps, de l’intimité et des passages de vie.
             </p>
           </div>
-        </div>
+        </article>
+
       </div>
     </section>
 
     <!-- Pour qui -->
     <section class="section for-who">
-      <div class="section-label">Pour qui</div>
-
       <div class="highlight-block">
+        <p class="section-label light">Pour qui</p>
+
         <h2>
           Pour celles et ceux qui sentent que le corps ne parle jamais seul.
         </h2>
@@ -203,15 +318,58 @@
       </div>
     </section>
 
+    <!-- Retours -->
+    <section class="section testimonials" id="retours">
+      <div class="section-intro">
+        <div>
+          <p class="section-label">Retours</p>
+          <h2>Quelques mots après les rencontres.</h2>
+        </div>
+
+        <p>
+          Ces retours sont provisoires et pourront être remplacés par les vrais témoignages
+          des participantes.
+        </p>
+      </div>
+
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <p>
+            “Un moment doux, profond et très simple à la fois. J’ai aimé pouvoir parler
+            sans devoir tout expliquer.”
+          </p>
+          <span>— Participante</span>
+        </article>
+
+        <article class="testimonial-card">
+          <p>
+            “Le cadre était clair, vivant, sans pression. Je suis repartie avec des mots
+            plus justes sur ce que je ressentais.”
+          </p>
+          <span>— Participante</span>
+        </article>
+
+        <article class="testimonial-card">
+          <p>
+            “Un espace qui fait du bien parce qu’il ne cherche pas à tout lisser.
+            Il y avait de la profondeur, mais aussi du rire.”
+          </p>
+          <span>— Participante</span>
+        </article>
+      </div>
+    </section>
+
     <!-- Réservation -->
     <section class="section reservation" id="reservation">
-      <div class="section-label">Réserver un appel</div>
-
       <div class="reservation-box">
         <div>
+          <p class="section-label">Réserver un appel</p>
+
           <h2>Un premier échange pour sentir si l’espace est juste.</h2>
+
           <p>
             Laissez vos informations, votre demande et le meilleur moyen de vous recontacter.
+            Le formulaire pourra ensuite être relié à un outil externe de réservation.
           </p>
         </div>
 
@@ -236,7 +394,7 @@
           </button>
 
           <p class="form-note">
-            Le formulaire sera relié ensuite à l’outil choisi : Tally, Formspree, Google Form ou Calendly.
+            Connexion possible ensuite : Tally, Formspree, Google Form ou Calendly.
           </p>
         </form>
       </div>
@@ -247,13 +405,14 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div>
-      <a href="#" class="footer-logo">hossnadharma</a>
+      <a href="#accueil" class="footer-logo">hossnadharma</a>
       <p>Corps, intimité, structures.</p>
     </div>
 
     <div class="footer-links">
       <a href="#" target="_blank" rel="noopener">Instagram</a>
-      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">Facebook</a>
+      <a href="#" target="_blank" rel="noopener">Spotify</a>
       <a href="mailto:contact@hossnadharma.fr">contact@hossnadharma.fr</a>
     </div>
   </footer>
@@ -263,7 +422,6 @@
     Réserver un appel
   </a>
 
-  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
