@@ -384,8 +384,20 @@ p {
 }
 
 .news-card.upcoming {
+  position: relative;
   padding: 28px;
   background-color: var(--indigo);
+}
+
+.news-card.upcoming::after {
+  content: "";
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(245, 239, 224, 0.22);
+  border-radius: 50% 45% 58% 42% / 44% 55% 45% 56%;
 }
 
 .news-card.upcoming h3,
@@ -433,9 +445,10 @@ p {
 
 .news-image img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  max-height: 320px;
+  object-fit: contain;
   border-radius: 26px;
+  background-color: var(--cream);
 }
 
 .news-content {
