@@ -1,426 +1,1160 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
 
-  <title>hossnadharma — Corps, intimité, structures</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    hossnadharma — Corps, intimité, structures
+  </title>
 
   <meta
     name="description"
-    content="hossnadharma — accompagnements autour du corps, de la parole, de la santé préventive, des approches psychocorporelles et des cercles de femmes."
-  />
+    content="Hossnadharma accompagne les femmes autour du corps, de la santé préventive, de la parole, du mouvement et des passages de vie."
+  >
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="theme-color" content="#FAF8F3">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&family=Caveat:wght@500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet"
-  />
+  >
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+  <div class="site-shell">
 
-  <!-- Header -->
-  <header class="site-header">
-    <a href="#accueil" class="logo">hossnadharma</a>
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
+      <div class="container site-header__inner">
 
-    <button class="menu-toggle" aria-label="Ouvrir le menu">
-      <span></span>
-      <span></span>
-    </button>
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Hossnadharma — Accueil"
+        >
+          hossnadharma
+        </a>
 
-    <nav class="main-nav">
-      <a href="#actualites">Actualités</a>
-      <a href="#qui-je-suis">Qui je suis</a>
-      <a href="#approche">L’approche</a>
-      <a href="#formats">Formats</a>
-      <a href="#reservation" class="nav-cta">Réserver un appel</a>
-    </nav>
-  </header>
+        <nav
+          class="site-nav"
+          aria-label="Navigation principale"
+        >
+          <ul class="site-nav__list">
+            <li>
+              <a
+                class="site-nav__link"
+                href="index.html"
+                aria-current="page"
+              >
+                Accueil
+              </a>
+            </li>
 
-  <main>
+            <li>
+              <a
+                class="site-nav__link"
+                href="qui-suis-je.html"
+              >
+                Qui je suis
+              </a>
+            </li>
 
-    <!-- Hero -->
-    <section class="hero" id="accueil">
-      <div class="hero-content">
-        <p class="eyebrow">Corps, parole & santé préventive</p>
+            <li>
+              <a
+                class="site-nav__link"
+                href="comment-je-travaille.html"
+              >
+                Comment je travaille
+              </a>
+            </li>
 
-        <h1>
-          Corps, intimité,<br />
-          structures.
-        </h1>
+            <li>
+              <a
+                class="site-nav__link"
+                href="espaces-de-rencontre.html"
+              >
+                Espaces de rencontre
+              </a>
+            </li>
 
-        <p class="hero-text">
-          Avec rire, rigueur et profondeur. Un espace pour écouter ce qui se passe
-          vraiment dans le corps, les liens, les rythmes de vie et les histoires qui nous traversent.
-        </p>
+            <li>
+              <a
+                class="site-nav__link"
+                href="ateliers-creations.html"
+              >
+                Ateliers & créations
+              </a>
+            </li>
 
-        <div class="hero-actions">
-          <a href="#reservation" class="btn btn-primary">Réserver un appel</a>
-          <a href="#actualites" class="btn btn-secondary">Voir les actualités</a>
-        </div>
+            <li>
+              <a
+                class="site-nav__link"
+                href="cardamome.html"
+              >
+                Cardamome
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="button button--primary"
+                href="contact.html"
+              >
+                Réserver un appel
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="menu-toggle__lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
       </div>
+    </header>
 
-      <div class="hero-visual" aria-hidden="true">
-<div class="visual-card visual-card-main">
-  <p>écouter avec le corps</p>
-</div>
+    <!-- Menu mobile -->
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+    >
+      <nav
+        class="mobile-menu__panel"
+        aria-label="Navigation mobile"
+      >
+        <ul class="mobile-menu__list">
+          <li>
+            <a
+              class="mobile-menu__link"
+              href="index.html"
+              aria-current="page"
+            >
+              Accueil
+            </a>
+          </li>
 
-        <div class="orb orb-teal"></div>
-        <div class="orb orb-rose"></div>
-        <div class="orb orb-terracotta"></div>
+          <li>
+            <a
+              class="mobile-menu__link"
+              href="qui-suis-je.html"
+            >
+              Qui je suis
+            </a>
+          </li>
 
-        <div class="line-mark line-one"></div>
-        <div class="line-mark line-two"></div>
-      </div>
-    </section>
+          <li>
+            <a
+              class="mobile-menu__link"
+              href="comment-je-travaille.html"
+            >
+              Comment je travaille
+            </a>
+          </li>
 
-    <!-- Actualités -->
-    <section class="section news" id="actualites">
-      <div class="section-intro">
-        <div>
-          <p class="section-label">Actualités</p>
-          <h2>Rencontres, cercles et espaces vivants.</h2>
-        </div>
+          <li>
+            <a
+              class="mobile-menu__link"
+              href="espaces-de-rencontre.html"
+            >
+              Espaces de rencontre
+            </a>
+          </li>
 
-        <p>
-          Retrouvez ici les événements à venir, les rencontres passées et les formats
-          proposés autour du corps, de la parole et de l’intimité.
-        </p>
-      </div>
+          <li>
+            <a
+              class="mobile-menu__link"
+              href="ateliers-creations.html"
+            >
+              Ateliers & créations
+            </a>
+          </li>
 
-      <div class="news-grid">
+          <li>
+            <a
+              class="mobile-menu__link"
+              href="cardamome.html"
+            >
+              Cardamome
+            </a>
+          </li>
 
-        <!-- Événement à venir -->
-        <article class="news-card upcoming">
-          <div class="news-status">À venir</div>
-          <div class="news-date">
-            <span>Prochainement</span>
-          </div>
+          <li>
+            <a
+              class="mobile-menu__link"
+              href="newsletter.html"
+            >
+              Newsletter
+            </a>
+          </li>
 
-          <div class="news-content">
-            <h3>Nouveau cercle à venir</h3>
-            <p>
-              Les prochaines dates seront annoncées bientôt. L’espace pourra prendre
-              la forme d’un cercle de parole, d’un atelier corporel ou d’une rencontre thématique.
+          <li>
+            <a
+              class="button button--primary"
+              href="contact.html"
+            >
+              Réserver un appel
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="site-main">
+
+      <!-- =========================
+           HERO
+      ========================== -->
+      <section class="home-hero hero">
+        <div class="container home-hero__grid">
+
+          <div class="home-hero__content reveal">
+            <span class="eyebrow">
+              Corps · parole · santé préventive
+            </span>
+
+            <h1 class="home-hero__title">
+              Corps,<br>
+              intimité,<br>
+              structures.
+            </h1>
+
+            <p class="home-hero__text">
+              J’accompagne les femmes à comprendre ce que leur corps,
+              leur histoire et leur vie cherchent à leur dire.
+              Avec rire, rigueur et profondeur.
             </p>
 
-            <a href="#reservation" class="text-link">Être informé·e</a>
-          </div>
-        </article>
+            <div class="home-hero__actions">
+              <a
+                class="button button--primary"
+                href="contact.html"
+              >
+                Réserver un appel découverte
+              </a>
 
-        <!-- Événement passé -->
-        <article class="news-card past">
-          <div class="news-image">
+              <a
+                class="button button--secondary"
+                href="espaces-de-rencontre.html"
+              >
+                Découvrir les accompagnements
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="home-hero__visual watercolor-frame reveal"
+            data-parallax="5"
+          >
             <img
-              src="assets/images/matinee-du-feminin.jpeg"
-              alt="Affiche de l'événement Première Matinée Du féminin"
-            />
+              src="assets/images/hero-hossnadharma.PNG"
+              alt="Des femmes de générations et de cultures différentes réunies dans un jardin méditerranéen"
+              width="1536"
+              height="640"
+            >
+
+            <p class="home-hero__signature">
+              Agir en beauté pour que les choses tiennent.
+            </p>
           </div>
 
-          <div class="news-content">
-            <div class="news-status">Événement passé</div>
+        </div>
+      </section>
 
-            <h3>Première Matinée “Du féminin”</h3>
+      <!-- =========================
+           AUJOURD'HUI
+      ========================== -->
+      <aside
+        class="today-strip"
+        aria-label="Aujourd’hui chez Hossnadharma"
+      >
+        <div class="container today-strip__inner">
+          <span class="today-strip__label">
+            Aujourd’hui
+          </span>
 
-            <p class="news-meta">
-              Dimanche 28 juin · 10h00 — 12h00 · Chez Mayah Coffee
+          <a
+            class="today-strip__item"
+            href="#rendez-vous"
+          >
+            Aqua Walking à Port-Saint-Louis-du-Rhône
+          </a>
+
+          <span class="today-strip__divider"></span>
+
+          <a
+            class="today-strip__item"
+            href="#cardamome"
+          >
+            Nouvel épisode de Cardamome
+          </a>
+
+          <span class="today-strip__divider"></span>
+
+          <a
+            class="today-strip__item"
+            href="newsletter.html"
+          >
+            Suivre les prochaines rencontres
+          </a>
+        </div>
+      </aside>
+
+      <!-- =========================
+           RENDEZ-VOUS
+      ========================== -->
+      <section
+        class="section"
+        id="rendez-vous"
+      >
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <span class="eyebrow">
+              Les rendez-vous
+            </span>
+
+            <h2>
+              Se retrouver,<br>
+              bouger et faire circuler.
+            </h2>
+
+            <p class="lead">
+              Des rencontres en mouvement, des cercles de parole et des
+              espaces pour sortir de l’isolement, respirer et reprendre
+              contact avec son propre rythme.
+            </p>
+          </div>
+
+          <div class="events-layout">
+
+            <!-- Événement actuel -->
+            <article class="event-featured reveal">
+              <div>
+                <span class="badge badge--light">
+                  En juillet
+                </span>
+              </div>
+
+              <div class="stack">
+                <div class="event-featured__meta">
+                  <span>Plage Olga</span>
+                  <span>Port-Saint-Louis-du-Rhône</span>
+                </div>
+
+                <h3>
+                  Longe-côte<br>
+                  & Aqua Walking
+                </h3>
+
+                <p>
+                  Une marche tonique en mer qui mobilise le cardio,
+                  les muscles et le système circulatoire, tout en
+                  préservant les articulations.
+                </p>
+
+                <ul class="stack">
+                  <li>
+                    Mardi et jeudi à 18h00
+                  </li>
+
+                  <li>
+                    Samedi à 9h00
+                  </li>
+
+                  <li>
+                    Relaxation dynamique en fin de séance
+                  </li>
+                </ul>
+
+                <a
+                  class="button button--secondary"
+                  href="mailto:housna.kbj@gmail.com?subject=Inscription%20Aqua%20Walking"
+                >
+                  Demander les prochaines dates
+                </a>
+              </div>
+            </article>
+
+            <!-- Événement passé -->
+            <article class="event-past reveal">
+              <div class="event-past__media">
+                <img
+                  src="assets/images/matinee-du-feminin.jpeg"
+                  alt="Affiche de la Première Matinée du féminin"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="stack">
+                <span class="badge">
+                  Rencontre passée
+                </span>
+
+                <h3>
+                  Première Matinée<br>
+                  « Du féminin »
+                </h3>
+
+                <div class="card__meta">
+                  <span>28 juin</span>
+                  <span>Chez Mayah Coffee</span>
+                  <span>Port-Saint-Louis-du-Rhône</span>
+                </div>
+
+                <p>
+                  Un cercle autour du thème :
+                  « Oser prendre sa place — sans s’excuser ».
+                  Une matinée pour parler librement, écouter et se
+                  retrouver entre femmes.
+                </p>
+
+                <a
+                  class="button button--text"
+                  href="newsletter.html"
+                >
+                  Être informée des prochains cercles
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           QUI EST HOSNA
+      ========================== -->
+      <section class="section">
+        <div class="container home-about">
+
+          <div class="home-about__visual watercolor-frame reveal">
+            <img
+              src="assets/images/hero-hossnadharma.PNG"
+              alt=""
+              loading="lazy"
+            >
+          </div>
+
+          <div class="home-about__content reveal">
+            <div>
+              <span class="eyebrow">
+                Qui je suis
+              </span>
+
+              <h2>
+                Je m’appelle Hosna.
+              </h2>
+            </div>
+
+            <p class="lead">
+              Je suis praticienne du corps et de la parole,
+              éducatrice de santé, artiste et conférencière.
             </p>
 
             <p>
-              Un temps autour du thème : “Oser prendre sa place — sans s’excuser”.
-              Animation au féminin, cercle de parole et questions libres.
+              Mon parcours traverse le travail social, les sciences du
+              travail, l’enseignement, la naturopathie ayurvédique,
+              les pratiques psychocorporelles et les arts vivants.
             </p>
 
-            <a href="#retours" class="text-link">Voir les retours</a>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Qui je suis -->
-    <section class="section about" id="qui-je-suis">
-      <div class="section-grid">
-        <div>
-          <p class="section-label">Qui je suis</p>
-          <h2>Je m’appelle Hosna.</h2>
-        </div>
-
-        <div class="section-text">
-          <p>
-            Je suis praticienne du corps et de la parole, éducatrice de santé.
-            Je travaille avec ce qui se passe vraiment : blessures anciennes,
-            schémas qui résistent, vie concrète.
-          </p>
-
-          <p>
-            Mon approche s’appuie sur la naturopathie ayurvédique,
-            les approches psychocorporelles et psychoémotionnelles,
-            la danse thérapie et les cercles de femmes.
-          </p>
-
-          <p>
-            J’accompagne en individuel, en groupe et en résidence.
-            Je fonctionne aussi par pair-aidance : je n’interviens que sur
-            ce que je connais de l’intérieur, par expérience vécue ou formation incarnée.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Approche -->
-    <section class="section approach" id="approche">
-      <div class="section-intro">
-        <div>
-          <p class="section-label">L’approche</p>
-          <h2>Tenir ensemble plusieurs lectures à la fois.</h2>
-        </div>
-
-        <p>
-          Une approche qui relie le concret du quotidien, le corps, la parole,
-          les vécus intimes et les structures dans lesquelles on évolue.
-        </p>
-      </div>
-
-      <div class="approach-grid">
-        <article class="approach-card">
-          <span class="card-number">01</span>
-          <h3>Le corps</h3>
-          <p>
-            Écouter les signaux, les fatigues, les douleurs,
-            les tensions et les rythmes qui parlent avant les mots.
-          </p>
-        </article>
-
-        <article class="approach-card">
-          <span class="card-number">02</span>
-          <h3>La parole</h3>
-          <p>
-            Mettre en mots ce qui traverse, relier les vécus,
-            ouvrir un espace clair, concret et incarné.
-          </p>
-        </article>
-
-        <article class="approach-card">
-          <span class="card-number">03</span>
-          <h3>La prévention</h3>
-          <p>
-            Comprendre ce qui peut être apaisé, désamorcé ou soutenu
-            avant de s’installer durablement.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Formats -->
-    <section class="section formats" id="formats">
-      <div class="section-intro">
-        <div>
-          <p class="section-label">Formats</p>
-          <h2>Des espaces différents, une même exigence d’écoute.</h2>
-        </div>
-
-        <p>
-          En individuel, en collectif ou en résidence, chaque format est pensé
-          pour garder un cadre clair, sensible et vivant.
-        </p>
-      </div>
-
-      <div class="formats-grid">
-
-        <article class="format-card">
-          <div class="format-illustration illustration-duo">
-            <span></span>
-            <span></span>
-          </div>
-
-          <div>
-            <h3>Individuel</h3>
             <p>
-              Un espace personnalisé autour du corps, des émotions,
-              des cycles de vie et des besoins du moment.
+              Ce que je propose, je le connais de l’intérieur :
+              maladies chroniques, conflits de valeurs, blessures
+              anciennes, corps qui résiste et vie qui demande à être
+              réorganisée autrement.
+            </p>
+
+            <a
+              class="button button--text"
+              href="qui-suis-je.html"
+            >
+              Lire mon histoire
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Citation éditoriale -->
+      <section class="section">
+        <div class="container">
+          <figure class="quote reveal">
+            <blockquote>
+              « Les blessures individuelles sont aussi les symptômes
+              des structures dans lesquelles nous vivons. »
+            </blockquote>
+          </figure>
+        </div>
+      </section>
+
+      <!-- =========================
+           MÉTHODE
+      ========================== -->
+      <section class="section">
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <span class="eyebrow">
+              Comment je travaille
+            </span>
+
+            <h2>
+              Comprendre plusieurs réalités à la fois.
+            </h2>
+
+            <p class="lead">
+              Ce qui manque souvent dans un suivi de santé,
+              ce n’est pas l’information. C’est une écoute capable de
+              relier le corps, l’histoire personnelle et le monde dans
+              lequel tout cela se passe.
             </p>
           </div>
-        </article>
 
-        <article class="format-card">
-          <div class="format-illustration illustration-group">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="method-steps">
+
+            <article class="method-step reveal">
+              <div class="method-step__number">
+                01
+              </div>
+
+              <h3>
+                Situer
+              </h3>
+
+              <p>
+                Comprendre que la fatigue, la douleur ou l’anxiété
+                ne sont pas des défaillances personnelles.
+                Elles racontent aussi un environnement, un rythme
+                et des adaptations devenues trop coûteuses.
+              </p>
+            </article>
+
+            <article class="method-step reveal">
+              <div class="method-step__number">
+                02
+              </div>
+
+              <h3>
+                Réguler
+              </h3>
+
+              <p>
+                Agir sur le terrain avec des pratiques concrètes :
+                respiration, système nerveux, sommeil, alimentation,
+                mouvement, émotions et rythme hormonal.
+              </p>
+            </article>
+
+            <article class="method-step reveal">
+              <div class="method-step__number">
+                03
+              </div>
+
+              <h3>
+                Se réapproprier
+              </h3>
+
+              <p>
+                Comprendre progressivement son corps, ses ressources
+                et ses besoins afin de ne pas dépendre indéfiniment
+                d’un accompagnement.
+              </p>
+            </article>
+
           </div>
 
-          <div>
-            <h3>Groupe</h3>
-            <p>
-              Des temps collectifs pour partager, comprendre,
-              expérimenter et remettre du lien dans les expériences vécues.
+          <div style="margin-top: var(--space-xl);">
+            <a
+              class="button button--text"
+              href="comment-je-travaille.html"
+            >
+              Découvrir ma manière de travailler
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =========================
+           ESPACES DE RENCONTRE
+      ========================== -->
+      <section class="section">
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <span class="eyebrow">
+              Espaces de rencontre
+            </span>
+
+            <h2>
+              Des cadres différents,<br>
+              selon ce que tu traverses.
+            </h2>
+
+            <p class="lead">
+              En ligne, en présentiel, en individuel ou en collectif.
+              Chaque espace possède son rythme, son intention et
+              son propre appel à l’action.
             </p>
           </div>
-        </article>
 
-        <article class="format-card">
-          <div class="format-illustration illustration-residence">
-            <span></span>
-            <span></span>
+          <div class="meeting-spaces">
+
+            <article class="card meeting-card reveal">
+              <div class="card__body meeting-card__body">
+                <span class="badge badge--green">
+                  En ligne
+                </span>
+
+                <h3 class="card__title">
+                  Naturopathie ayurvédique
+                </h3>
+
+                <p>
+                  Santé préventive féminine, cycle, fatigue,
+                  endométriose, sommeil, énergie, digestion et
+                  transitions hormonales.
+                </p>
+
+                <a
+                  class="button button--text"
+                  href="espaces-de-rencontre.html#naturopathie"
+                >
+                  Découvrir ce suivi
+                </a>
+              </div>
+            </article>
+
+            <article class="card meeting-card reveal">
+              <div class="card__body meeting-card__body">
+                <span class="badge">
+                  En ligne
+                </span>
+
+                <h3 class="card__title">
+                  Estime de soi, anxiété & burn-out
+                </h3>
+
+                <p>
+                  Comprendre les mécanismes de survie, réguler le
+                  système nerveux et retrouver une relation plus juste
+                  au repos, aux besoins et à la légitimité.
+                </p>
+
+                <a
+                  class="button button--text"
+                  href="espaces-de-rencontre.html#anxiete"
+                >
+                  Découvrir ce suivi
+                </a>
+              </div>
+            </article>
+
+            <article class="card meeting-card reveal">
+              <div class="card__body meeting-card__body">
+                <span class="badge badge--blue">
+                  Relations
+                </span>
+
+                <h3 class="card__title">
+                  Femme d’intérieure
+                </h3>
+
+                <p>
+                  Un travail sur la nature profonde, les schémas
+                  relationnels et les conditions intérieures nécessaires
+                  pour s’engager sans se trahir.
+                </p>
+
+                <a
+                  class="button button--text"
+                  href="espaces-de-rencontre.html#femme-interieure"
+                >
+                  Découvrir Moulat Addar
+                </a>
+              </div>
+            </article>
+
+            <article class="card meeting-card reveal">
+              <div class="card__body meeting-card__body">
+                <span class="badge badge--green">
+                  Corps & mouvement
+                </span>
+
+                <h3 class="card__title">
+                  Danse thérapie
+                </h3>
+
+                <p>
+                  Bouger ce que les mots n’atteignent pas toujours,
+                  libérer les tensions et retrouver un rapport au corps
+                  plus doux et plus vivant.
+                </p>
+
+                <a
+                  class="button button--text"
+                  href="espaces-de-rencontre.html#danse"
+                >
+                  Explorer la danse thérapie
+                </a>
+              </div>
+            </article>
+
+            <article class="card meeting-card reveal">
+              <div class="card__body meeting-card__body">
+                <span class="badge">
+                  Collectif
+                </span>
+
+                <h3 class="card__title">
+                  Cercles & Daret
+                </h3>
+
+                <p>
+                  Des cercles ouverts ou organisés avec une tribu déjà
+                  constituée, pour remettre la parole, la réciprocité
+                  et la solidarité au centre.
+                </p>
+
+                <a
+                  class="button button--text"
+                  href="espaces-de-rencontre.html#cercles"
+                >
+                  Découvrir Dayira Félicité
+                </a>
+              </div>
+            </article>
+
+            <article class="card meeting-card reveal">
+              <div class="card__body meeting-card__body">
+                <span class="badge badge--blue">
+                  Camargue
+                </span>
+
+                <h3 class="card__title">
+                  Séjour à part
+                </h3>
+
+                <p>
+                  Deux à trois jours sur mesure pour une femme,
+                  un duo ou un trio déjà lié, au cœur du Parc naturel
+                  de Camargue.
+                </p>
+
+                <a
+                  class="button button--text"
+                  href="espaces-de-rencontre.html#sejour"
+                >
+                  Découvrir le séjour
+                </a>
+              </div>
+            </article>
+
           </div>
 
-          <div>
-            <h3>Résidence</h3>
-            <p>
-              Des immersions plus longues, pensées comme des espaces
-              de profondeur, de respiration et de pratique.
+          <div style="margin-top: var(--space-xl);">
+            <a
+              class="button button--secondary"
+              href="espaces-de-rencontre.html"
+            >
+              Voir tous les espaces de rencontre
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- =========================
+           CARDAMOME
+      ========================== -->
+      <section
+        class="section podcast-section"
+        id="cardamome"
+      >
+        <div class="container podcast-layout">
+
+          <div
+            class="podcast-visual reveal"
+            data-parallax="4"
+          >
+            <img
+              src="assets/images/cardamome-podcast.PNG"
+              alt="Illustration du podcast Cardamome représentant un groupe de femmes dans l’eau"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="podcast-content reveal">
+            <div>
+              <span class="eyebrow">
+                Cardamome · Podcast
+              </span>
+
+              <h2>
+                Des histoires qui relient.
+              </h2>
+            </div>
+
+            <p class="lead">
+              Des récits de vie, des conversations et des réflexions
+              autour de la santé, du travail, de l’amour, des relations,
+              de la spiritualité et du vivre-ensemble.
             </p>
+
+            <div class="stack">
+              <span class="badge badge--blue">
+                Dernier épisode
+              </span>
+
+              <h3>
+                Sagesse soufie : le vivre ensemble s’incarne
+              </h3>
+
+              <p>
+                Quarante personnes dans l’eau, pieds nus et à la même
+                hauteur. Un épisode autour du collectif, de la présence
+                et d’une sagesse qui se vit dans les actes.
+              </p>
+            </div>
+
+            <div class="podcast-links">
+              <a
+                class="button button--primary"
+                href="https://open.spotify.com/show/22MwhMzuBRqh1pZkjojIxy?si=963wtKikTyedSfOodf_Qqw&utm_source=copy-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Écouter sur Spotify
+              </a>
+
+              <a
+                class="button button--secondary"
+                href="https://youtube.com/@hossnadharma?si=c_8RfB_y_9P6oMLq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Voir sur YouTube
+              </a>
+
+              <a
+                class="button button--text"
+                href="cardamome.html"
+              >
+                Découvrir Cardamome
+              </a>
+            </div>
           </div>
-        </article>
 
-        <article class="format-card">
-          <div class="format-illustration illustration-circle">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        </div>
+      </section>
+
+      <!-- =========================
+           ATELIERS & CRÉATIONS
+      ========================== -->
+      <section class="section">
+        <div class="container">
+
+          <div class="split">
+            <div class="section-heading reveal">
+              <span class="eyebrow">
+                Ateliers & créations
+              </span>
+
+              <h2>
+                Quand la pensée passe aussi par l’art.
+              </h2>
+            </div>
+
+            <div class="stack reveal">
+              <p class="lead">
+                Conférence gesticulée, aquarelles en éditions limitées
+                et créations dans lesquelles le mouvement, la parole
+                et la couleur prolongent le travail d’accompagnement.
+              </p>
+
+              <a
+                class="button button--text"
+                href="ateliers-creations.html"
+              >
+                Voir les ateliers et les créations
+              </a>
+            </div>
           </div>
 
-          <div>
-            <h3>Cercles de femmes</h3>
-            <p>
-              Des rencontres structurées, sensibles et vivantes,
-              autour du corps, de l’intimité et des passages de vie.
-            </p>
+        </div>
+      </section>
+
+      <!-- =========================
+           NEWSLETTER
+      ========================== -->
+      <section class="section">
+        <div class="container">
+
+          <div class="newsletter-block reveal">
+            <div class="newsletter-block__content">
+              <span class="eyebrow" style="color: var(--color-saffron);">
+                La lettre Hossnadharma
+              </span>
+
+              <h2>
+                Continuer la conversation.
+              </h2>
+
+              <p class="lead">
+                Recevoir les prochains rendez-vous, les nouveaux
+                épisodes de Cardamome, des textes et les nouvelles
+                du projet DAR-MÂ Maroc 2027.
+              </p>
+
+              <form
+                class="newsletter-form"
+                data-preview-form
+              >
+                <div>
+                  <label
+                    class="sr-only"
+                    for="newsletter-email"
+                  >
+                    Adresse e-mail
+                  </label>
+
+                  <input
+                    id="newsletter-email"
+                    name="email"
+                    type="email"
+                    placeholder="votre@email.com"
+                    autocomplete="email"
+                    required
+                  >
+                </div>
+
+                <button
+                  class="button button--primary"
+                  type="submit"
+                >
+                  Rejoindre la lettre
+                </button>
+
+                <p
+                  class="form__note"
+                  data-form-message
+                ></p>
+              </form>
+            </div>
           </div>
-        </article>
 
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <!-- Pour qui -->
-    <section class="section for-who">
-      <div class="highlight-block">
-        <p class="section-label light">Pour qui</p>
+      <!-- =========================
+           CONTACT FINAL
+      ========================== -->
+      <section class="section">
+        <div class="container">
 
-        <h2>
-          Pour celles et ceux qui sentent que le corps ne parle jamais seul.
-        </h2>
+          <div class="contact-cta reveal">
+            <div class="contact-cta__content">
+              <span class="eyebrow">
+                Premier échange
+              </span>
 
-        <p>
-          Stress chronique, fatigue, anxiété, burn out, insomnies,
-          douleurs, endométriose, fibromyalgie ou TDA/H :
-          ces réalités demandent parfois de croiser le concret du quotidien,
-          la symbolique, l’histoire personnelle et les structures dans lesquelles on vit.
-        </p>
-      </div>
-    </section>
+              <h2>
+                Sentir si cet espace est juste pour toi.
+              </h2>
 
-    <!-- Retours -->
-    <section class="section testimonials" id="retours">
-      <div class="section-intro">
-        <div>
-          <p class="section-label">Retours</p>
-          <h2>Quelques mots après les rencontres.</h2>
+              <p class="lead">
+                Un premier appel permet de parler de ce que tu traverses,
+                de comprendre le format le plus adapté et de vérifier
+                simplement si nous avons envie de travailler ensemble.
+              </p>
+            </div>
+
+            <div class="stack">
+              <a
+                class="button button--primary"
+                href="contact.html"
+              >
+                Réserver un appel découverte
+              </a>
+
+              <a
+                class="button button--secondary"
+                href="mailto:housna.kbj@gmail.com"
+              >
+                Écrire à Hosna
+              </a>
+
+              <small>
+                Un tarif ajusté est possible selon les situations.
+                Écris-moi avant de réserver.
+              </small>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+
+        <div class="site-footer__brand">
+          <a
+            class="brand"
+            href="index.html"
+          >
+            hossnadharma
+          </a>
+
+          <p>
+            Corps, intimité, structures.<br>
+            Avec rire, rigueur et profondeur.
+          </p>
+
+          <div class="social-links">
+            <a
+              class="social-link"
+              href="https://www.facebook.com/share/1BEoMsaspb/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+
+            <a
+              class="social-link"
+              href="https://www.tiktok.com/@hossna.dharma?_r=1&_t=ZN-981tpKG9X4Y"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TikTok
+            </a>
+
+            <a
+              class="social-link"
+              href="https://youtube.com/@hossnadharma?si=c_8RfB_y_9P6oMLq"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              YouTube
+            </a>
+
+            <a
+              class="social-link"
+              href="https://open.spotify.com/show/22MwhMzuBRqh1pZkjojIxy?si=963wtKikTyedSfOodf_Qqw&utm_source=copy-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Spotify
+            </a>
+          </div>
         </div>
 
-        <p>
-          Ces retours sont provisoires et pourront être remplacés par les vrais témoignages
-          des participantes.
-        </p>
-      </div>
+        <div class="site-footer__columns">
 
-      <div class="testimonial-grid">
-        <article class="testimonial-card">
-          <p>
-            “Un moment doux, profond et très simple à la fois. J’ai aimé pouvoir parler
-            sans devoir tout expliquer.”
-          </p>
-          <span>— Participante</span>
-        </article>
+          <div class="site-footer__column">
+            <h3 class="site-footer__title">
+              Découvrir
+            </h3>
 
-        <article class="testimonial-card">
-          <p>
-            “Le cadre était clair, vivant, sans pression. Je suis repartie avec des mots
-            plus justes sur ce que je ressentais.”
-          </p>
-          <span>— Participante</span>
-        </article>
+            <a href="qui-suis-je.html">
+              Qui je suis
+            </a>
 
-        <article class="testimonial-card">
-          <p>
-            “Un espace qui fait du bien parce qu’il ne cherche pas à tout lisser.
-            Il y avait de la profondeur, mais aussi du rire.”
-          </p>
-          <span>— Participante</span>
-        </article>
-      </div>
-    </section>
+            <a href="comment-je-travaille.html">
+              Comment je travaille
+            </a>
 
-    <!-- Réservation -->
-    <section class="section reservation" id="reservation">
-      <div class="reservation-box">
-        <div>
-          <p class="section-label">Réserver un appel</p>
+            <a href="espaces-de-rencontre.html">
+              Espaces de rencontre
+            </a>
+          </div>
 
-          <h2>Un premier échange pour sentir si l’espace est juste.</h2>
+          <div class="site-footer__column">
+            <h3 class="site-footer__title">
+              Univers
+            </h3>
 
-          <p>
-            Laissez vos informations, votre demande et le meilleur moyen de vous recontacter.
-            Le formulaire pourra ensuite être relié à un outil externe de réservation.
-          </p>
+            <a href="cardamome.html">
+              Cardamome
+            </a>
+
+            <a href="ateliers-creations.html">
+              Ateliers & créations
+            </a>
+
+            <a href="newsletter.html">
+              Newsletter
+            </a>
+          </div>
+
+          <div class="site-footer__column">
+            <h3 class="site-footer__title">
+              Contact
+            </h3>
+
+            <a href="contact.html">
+              Réserver un appel
+            </a>
+
+            <a href="mailto:housna.kbj@gmail.com">
+              housna.kbj@gmail.com
+            </a>
+
+            <p>
+              DAR-MÂ, Maroc 2027.<br>
+              Un lieu en construction.
+            </p>
+          </div>
+
         </div>
-
-        <form class="contact-form">
-          <div class="form-group">
-            <label for="name">Nom</label>
-            <input type="text" id="name" name="name" placeholder="Votre nom" />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Adresse e-mail</label>
-            <input type="email" id="email" name="email" placeholder="votre@email.com" />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Votre demande</label>
-            <textarea id="message" name="message" rows="5" placeholder="Quelques mots sur votre besoin"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">
-            Envoyer la demande
-          </button>
-
-          <p class="form-note">
-            Connexion possible ensuite : Tally, Formspree, Google Form ou Calendly.
-          </p>
-        </form>
       </div>
-    </section>
 
-  </main>
+      <div class="container site-footer__bottom">
+        <span>
+          © <span data-current-year></span> hossnadharma
+        </span>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div>
-      <a href="#accueil" class="footer-logo">hossnadharma</a>
-      <p>Corps, intimité, structures.</p>
-    </div>
+        <span>
+          Un tarif ajusté est possible selon les situations.
+        </span>
+      </div>
+    </footer>
 
-    <div class="footer-links">
-      <a href="#" target="_blank" rel="noopener">Instagram</a>
-      <a href="#" target="_blank" rel="noopener">Facebook</a>
-      <a href="#" target="_blank" rel="noopener">Spotify</a>
-      <a href="mailto:contact@hossnadharma.fr">contact@hossnadharma.fr</a>
-    </div>
-  </footer>
+  </div>
 
-  <!-- Bouton flottant mobile -->
-  <a href="#reservation" class="floating-cta">
-    Réserver un appel
-  </a>
-
-  <script src="script.js"></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
