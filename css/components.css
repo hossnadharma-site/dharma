@@ -323,14 +323,6 @@
 
 /* Animation d’apparition */
 .reveal {
-  opacity: 0;
-  transform: translateY(26px);
-  transition:
-    opacity var(--transition-slow),
-    transform var(--transition-slow);
-}
-
-.reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
